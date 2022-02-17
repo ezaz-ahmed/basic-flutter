@@ -295,6 +295,18 @@ class _HomePageState extends State<HomePage> {
                 ],
               ),
             ),
+            Row(
+              children: const [
+                Text(
+                  "Area of focus",
+                  textAlign: TextAlign.center,
+                  style: TextStyle(
+                    fontSize: 25,
+                    fontWeight: FontWeight.w500,
+                  ),
+                ),
+              ],
+            ),
           ],
         ),
       ),
