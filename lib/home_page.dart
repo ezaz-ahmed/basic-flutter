@@ -58,13 +58,53 @@ class _HomePageState extends State<HomePage> {
             Row(
               children: <Widget>[
                 Text(
-                  "Training",
+                  "Your Program",
                   style: TextStyle(
-                      fontSize: 30,
-                      color: color.AppColor.homePageTitle,
-                      fontWeight: FontWeight.w700),
+                    fontSize: 20,
+                    color: color.AppColor.homePageSubtitle,
+                    fontWeight: FontWeight.w700,
+                  ),
+                ),
+                Expanded(
+                  child: Container(),
+                ),
+                Text(
+                  "Details",
+                  style: TextStyle(
+                    fontSize: 20,
+                    color: color.AppColor.homePageDetail,
+                  ),
+                ),
+                const SizedBox(
+                  width: 5,
+                ),
+                Icon(
+                  Icons.arrow_forward,
+                  size: 20,
+                  color: color.AppColor.homePageIcons,
                 ),
               ],
+            ),
+            const SizedBox(
+              height: 30,
+            ),
+            Container(
+              width: MediaQuery.of(context).size.width,
+              height: 220,
+              decoration: BoxDecoration(
+                gradient: LinearGradient(
+                  colors: [
+                    color.AppColor.gradientFirst.withOpacity(0.8),
+                    color.AppColor.gradientSecond,
+                  ],
+                ),
+                borderRadius: const BorderRadius.only(
+                  topLeft: Radius.circular(10),
+                  bottomRight: Radius.circular(10),
+                  bottomLeft: Radius.circular(10),
+                  topRight: Radius.circular(80),
+                ),
+              ),
             ),
           ],
         ),
