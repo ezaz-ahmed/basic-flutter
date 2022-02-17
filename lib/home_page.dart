@@ -207,7 +207,7 @@ class _HomePageState extends State<HomePage> {
               height: 180,
               width: MediaQuery.of(context).size.width,
               child: Stack(
-                children: [
+                children: <Widget>[
                   Container(
                     width: MediaQuery.of(context).size.width,
                     height: 120,
@@ -215,7 +215,7 @@ class _HomePageState extends State<HomePage> {
                       borderRadius: BorderRadius.circular(20),
                       image: const DecorationImage(
                         image: AssetImage(
-                          "assets/card.jgp",
+                          'lib/assets/card.jgp',
                         ),
                       ),
                     ),
